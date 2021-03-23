@@ -1,0 +1,9 @@
+{
+  "roots": [
+    "src/sgml-stream"
+  ],
+  "devRoots": [
+    "tests/"
+  ],
+  "devFailureHandler": "Facebook\\AutoloadMap\\HHClientFallbackHandler"
+}

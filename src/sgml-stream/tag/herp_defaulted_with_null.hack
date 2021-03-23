@@ -1,0 +1,9 @@
+namespace HTL\OpenXHPSpecification\tag;
+
+final xhp class herp_defaulted_with_null extends \HTL\SGMLStream\RootElement {
+  use \HTL\SGMLStream\ElementWithOpenAndCloseTags;
+
+  attribute string herp = null;
+
+  protected string $tagName = 'herp_defaulted_with_null';
+}
