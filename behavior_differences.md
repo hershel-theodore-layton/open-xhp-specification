@@ -1,7 +1,7 @@
 ## Differences
 |Given|then|
 |--:|:--|
-| An xhp object with a boolean attribute (1) | renders false as an attribute with the value of an empty string on sgml stream |
+| An xhp object with a boolean attribute (1) | renders false as an attribute with the value of an empty string **on sgml stream** |
 | An xhp object with a boolean attribute (1) | renders false by not including the attribute **on xhp lib** |
 | An xhp object with declared defaulted attributes not set (2) | renders an element with the default values **on sgml stream** |
 | An xhp object with declared defaulted attributes not set (2) | renders an empty element **on xhp lib** |
