@@ -80,3 +80,14 @@
 | An xhp object with special required attributes not set | renders an empty element |
 | An xhp object with special required attributes set | renders all explicitly set attributes |
 | An xhp object without attributes | renders an empty element |
+
+## Identical children behavior
+|Given|then|
+|--:|:--|
+| Given children as arrays | the arrays are unpacked in order |
+| Given children as elements | the elements are saved |
+| Given children as frags | the frags are unpacked in order |
+| Given children as numbers | the numbers are not cast to a string |
+| Given children as strings | the strings are not yet escaped |
+| Given children with a bit of everything | the frags and arrays are unpacked in order |
+| Given children with nulls | the nulls are ignored |
