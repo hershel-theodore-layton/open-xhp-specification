@@ -11,7 +11,6 @@
     "hhvm/hacktest": "^2.2",
     "facebook/fbexpect": "^2.7",
     "facebook/xhp-lib": "^4.0",
-    "hershel-theodore-layton/sgml-stream": "dev-master",
-    "hershel-theodore-layton/sgml-stream-interfaces": "dev-master"
+    "hershel-theodore-layton/sgml-stream": "dev-master"
   }
 }
