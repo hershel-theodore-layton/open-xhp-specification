@@ -12,5 +12,13 @@
     "facebook/fbexpect": "^2.7",
     "facebook/xhp-lib": "^4.0",
     "hershel-theodore-layton/sgml-stream": ">=0.2"
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "rm vendor/autoload.php vendor/composer/*.php"
+    ],
+    "post-update-cmd": [
+      "rm vendor/autoload.php vendor/composer/*.php"
+    ]
   }
 }
