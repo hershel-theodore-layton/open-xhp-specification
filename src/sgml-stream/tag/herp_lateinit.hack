@@ -6,4 +6,5 @@ final xhp class herp_lateinit extends \HTL\SGMLStream\RootElement {
   attribute string herp @lateinit;
 
   protected string $tagName = 'herp_lateinit';
+  const string TAG_NAME = 'herp_lateinit';
 }

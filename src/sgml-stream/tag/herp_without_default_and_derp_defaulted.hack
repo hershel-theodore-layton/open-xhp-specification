@@ -9,4 +9,5 @@ final xhp class herp_without_default_and_derp_defaulted
     string derp = 'default';
 
   protected string $tagName = 'herp_without_default_and_derp_defaulted';
+  const string TAG_NAME = 'herp_without_default_and_derp_defaulted';
 }

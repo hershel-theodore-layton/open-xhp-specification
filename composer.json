@@ -2,16 +2,15 @@
   "name": "hershel-theodore-layton/open-xhp-specification",
   "description": "An ad hoc specification of the behaviors of xhp-lib and sgml-stream.",
   "require": {
-    "hhvm": "^4.73",
-    "hhvm/hsl": "^4.41"
+    "hhvm": "^4.102"
   },
   "require-dev": {
     "hhvm/hhvm-autoload": "^3.2",
-    "hhvm/hhast": "^4.64",
-    "hhvm/hacktest": "^2.2",
-    "facebook/fbexpect": "^2.7",
+    "hhvm/hhast": "^4.102",
+    "hhvm/hacktest": "^2.3",
+    "facebook/fbexpect": "^2.8",
     "facebook/xhp-lib": "^4.0",
-    "hershel-theodore-layton/sgml-stream": ">=0.2"
+    "hershel-theodore-layton/sgml-stream": ">=0.6"
   },
   "scripts": {
     "post-install-cmd": [

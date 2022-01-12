@@ -6,4 +6,5 @@ final xhp class bull extends \HTL\SGMLStream\RootElement {
   attribute bool burp;
 
   protected string $tagName = 'bull';
+  const string TAG_NAME = 'bull';
 }

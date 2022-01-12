@@ -8,4 +8,5 @@ final xhp class herp_and_durr extends \HTL\SGMLStream\RootElement {
     float durr;
 
   protected string $tagName = 'herp_and_durr';
+  const string TAG_NAME = 'herp_and_durr';
 }

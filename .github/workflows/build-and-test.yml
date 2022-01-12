@@ -14,7 +14,8 @@ jobs:
       matrix:
         os: [ ubuntu ]
         hhvm:
-          - '4.73'
+          - '4.102'
+          - '4.128'
           - latest
           - nightly
     runs-on: ${{matrix.os}}-latest
@@ -26,5 +27,6 @@ jobs:
         with:
           hhvm: ${{matrix.hhvm}}
           skip_tests: true
+          skip_lint: ${{ matrix.hhvm != 'latest' }}
       - name: Test
         run: make run_all_tests
