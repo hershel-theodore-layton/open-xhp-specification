@@ -13,7 +13,8 @@ final xhp class frag
   <<__Override>>
   public function placeIntoSnippetStream(
     \HTL\SGMLStreamInterfaces\SnippetStream $stream,
+    \HTL\SGMLStreamInterfaces\Init<\HTL\SGMLStreamInterfaces\Flow> $init_flow,
   ): void {
-    $this->placeMyChildrenIntoSnippetStream($stream);
+    $this->placeMyChildrenIntoSnippetStream($stream, $init_flow);
   }
 }

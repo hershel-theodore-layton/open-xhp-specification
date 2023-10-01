@@ -19,5 +19,6 @@ final class AccessProtected extends \HTL\SGMLStream\RootElement {
   <<__Override>>
   public function placeIntoSnippetStream(
     \HTL\SGMLStreamInterfaces\SnippetStream $_stream,
+    \HTL\SGMLStreamInterfaces\Flow $_init_flow,
   ): void {}
 }
