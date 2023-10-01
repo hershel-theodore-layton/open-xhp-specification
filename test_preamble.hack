@@ -4,6 +4,7 @@ namespace HTL\OpenXHPSpecification;
 function main(): void {
   require_once __DIR__.'/vendor/autoload.hack';
   \Facebook\AutoloadMap\initialize();
+  // This constant is defined twice. Once for each library.
   $l = LIBRARY_UNDER_TEST;
   $v = null;
 
