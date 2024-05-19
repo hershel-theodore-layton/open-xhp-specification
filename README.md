@@ -14,7 +14,7 @@ This repository is a bit of a unicorn. You can't just run tests using `vendor/bi
 
 ## Fooling the typechecker
 
-This repository uses a single set of tests for both libraries. This ensures that the tests can never get out of sync. This means that there are two definitions of some symbols. `<tag:herp_and_derp>` is defined twice for example. Once with xhp-lib and once with sgml-stream. We swap out `.hhconfig` and `hh_autoload.json` between running the tests. One file ignores the xhp-lib definitions, the other ignores sgml-stream. See `ignored_paths = [ ... ]` in `xtract/.../.hhconfig`.
+This repository uses a single set of tests for both libraries. This ensures that the tests can never get out of sync. This means that there are two definitions of some symbols. `<tag:herp_and_derp>` is defined twice for example. Once with xhp-lib and once with sgml-stream. We swap out `.hhconfig` and `hh_autoload.json` between running the tests. One file ignores the xhp-lib definitions, the other ignores sgml-stream. See `ignored_paths = [ ... ]` in `xtract/.../.hhconfig`. Because of this trickery ust must set `hhvm.autoload.enabled = false` in your ini file.
 
 Tricking Hack like this is most likely not what the engineers at Facebook had in mind when they added that `.hhconfig` flag. If this ends up being broken in a future release of hhvm, we'll have to move files in and out of the source root instead. But, _it works for now._ We should probably put that on the common Developer Coat of Arms.
 
