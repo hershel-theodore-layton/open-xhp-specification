@@ -2,6 +2,7 @@ namespace HTL\OpenXHPSpecification\tag;
 
 final xhp class data_special_required extends \HTL\SGMLStream\RootElement {
   use \HTL\SGMLStream\ElementWithOpenAndCloseTags;
+  const ctx INITIALIZATION_CTX = [];
 
   attribute string data-special @required;
 

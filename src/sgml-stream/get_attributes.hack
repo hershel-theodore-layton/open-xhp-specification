@@ -7,6 +7,7 @@ function get_attributes(
 }
 
 final class AccessProtected extends \HTL\SGMLStream\RootElement {
+  const ctx INITIALIZATION_CTX = [];
   public static function getAttributesForElement(
     \HTL\SGMLStreamInterfaces\Element $element,
   ): (dict<string, nonnull>, dict<string, arraykey>) {

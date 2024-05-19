@@ -3,6 +3,7 @@ namespace HTL\OpenXHPSpecification\tag;
 final xhp class herp_without_default_and_derp_defaulted
   extends \HTL\SGMLStream\RootElement {
   use \HTL\SGMLStream\ElementWithOpenAndCloseTags;
+  const ctx INITIALIZATION_CTX = [];
 
   attribute
     string herp,

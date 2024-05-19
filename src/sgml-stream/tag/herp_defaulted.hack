@@ -2,6 +2,7 @@ namespace HTL\OpenXHPSpecification\tag;
 
 final xhp class herp_defaulted extends \HTL\SGMLStream\RootElement {
   use \HTL\SGMLStream\ElementWithOpenAndCloseTags;
+  const ctx INITIALIZATION_CTX = [];
 
   attribute string herp = 'default';
 

@@ -10,7 +10,8 @@
     "hhvm/hacktest": "^2.3",
     "facebook/fbexpect": "^2.8",
     "facebook/xhp-lib": "^4.0",
-    "hershel-theodore-layton/sgml-stream": ">=1"
+    "hershel-theodore-layton/sgml-stream-interfaces": "dev-master",
+    "hershel-theodore-layton/sgml-stream": "dev-master"
   },
   "scripts": {
     "post-install-cmd": [

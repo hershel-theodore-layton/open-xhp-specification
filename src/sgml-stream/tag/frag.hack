@@ -5,8 +5,9 @@ use type XHPChild;
 final xhp class frag
   extends \HTL\SGMLStream\RootElement
   implements \HTL\SGMLStreamInterfaces\FragElement {
+  const ctx INITIALIZATION_CTX = [];
 
-  public function getFragChildren(): vec<XHPChild> {
+  public function getFragChildren()[]: vec<XHPChild> {
     return $this->getChildren();
   }
 

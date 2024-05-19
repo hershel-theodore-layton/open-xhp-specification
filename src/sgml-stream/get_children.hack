@@ -7,6 +7,8 @@ function get_children(\HTL\SGMLStream\RootElement $element): vec<XHPChild> {
 }
 
 final class AccessProtectedChildren extends \HTL\SGMLStream\RootElement {
+  const ctx INITIALIZATION_CTX = [];
+
   public static function getChildrenPublic(
     \HTL\SGMLStreamInterfaces\Element $element,
   ): vec<XHPChild> {
