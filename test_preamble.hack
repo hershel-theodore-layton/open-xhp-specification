@@ -9,7 +9,7 @@ function main(): void {
   $l = LIBRARY_UNDER_TEST;
   $v = null;
 
-  $packages = \file_get_contents(__DIR__.'/composer.lock')
+  $packages = \file_get_contents(__DIR__.'/composer.dev.lock')
     |> \json_decode($$, true)['packages-dev'];
   foreach ($packages as $p) {
     if ($p['name'] === $l) {
