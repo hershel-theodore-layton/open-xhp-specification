@@ -1,3 +1,4 @@
+/** open-xhp-specification is MIT licensed, see /LICENSE. */
 namespace HTL\OpenXHPSpecification\tag;
 
 final xhp class herp_without_default_and_derp_defaulted

@@ -1,3 +1,4 @@
+/** open-xhp-specification is MIT licensed, see /LICENSE. */
 namespace HTL\OpenXHPSpecification\tag;
 
 final xhp class herp_required extends \HTL\SGMLStream\RootElement {

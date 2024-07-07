@@ -1,3 +1,4 @@
+/** open-xhp-specification is MIT licensed, see /LICENSE. */
 namespace HTL\OpenXHPSpecification;
 
 function get_attributes(
