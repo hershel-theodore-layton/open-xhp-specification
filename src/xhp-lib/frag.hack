@@ -4,6 +4,6 @@ namespace HTL\OpenXHPSpecification;
 use type XHPChild;
 use namespace Facebook\XHP\Core;
 
-function frag(?XHPChild $children): Core\frag {
+function frag(?XHPChild $children)[defaults]: Core\frag {
   return <Core:frag>{$children}</Core:frag>;
 }

@@ -10,12 +10,12 @@ final class GivenAnXHPObjectWithDeclaredRequiredAttributesNotSetTest
 
   use TestExtensions;
 
-  protected static function typeUnderTest(): this::TypeUnderTest {
+  protected static function typeUnderTest()[defaults]: this::TypeUnderTest {
     /* HH_FIXME[4314] Missing the required herp attribute */
     return <tag:herp_required />;
   }
 
-  public function test_access_throws_on_xhp_lib(): void {
+  public function test_access_throws_on_xhp_lib()[defaults]: void {
     static::skipIfSGMLStream(
       'sgml-stream does not expect you to violate required',
     );
@@ -25,13 +25,14 @@ final class GivenAnXHPObjectWithDeclaredRequiredAttributesNotSetTest
     );
   }
 
-  public function test_access_yields_null_on_sgml_stream(): void {
+  public function test_access_yields_null_on_sgml_stream()[defaults]: void {
     static::skipIfXHPLib(null);
     $type_under_test = static::typeUnderTest();
     expect($type_under_test->:herp)->toBeNull();
   }
 
-  public async function test_renders_an_empty_element(): Awaitable<void> {
+  public async function test_renders_an_empty_element(
+  )[defaults]: Awaitable<void> {
     $type_under_test = static::typeUnderTest();
     expect(await to_string_async($type_under_test))->toEqual(
       '<herp_required></herp_required>',

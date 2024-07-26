@@ -16,7 +16,7 @@ final xhp class frag
   public function placeIntoSnippetStream(
     \HTL\SGMLStreamInterfaces\SnippetStream $stream,
     \HTL\SGMLStreamInterfaces\Init<\HTL\SGMLStreamInterfaces\Flow> $init_flow,
-  ): void {
+  )[defaults]: void {
     $this->placeMyChildrenIntoSnippetStream($stream, $init_flow);
   }
 }

@@ -5,7 +5,7 @@ use namespace HH\Lib\{Dict, Str};
 
 function get_attributes(
   \Facebook\XHP\Core\node $node,
-): (dict<string, mixed>, dict<string, mixed>) {
+)[defaults]: (dict<string, mixed>, dict<string, mixed>) {
   $attributes = $node->getAttributes();
   return Dict\partition_with_key(
     $attributes,
