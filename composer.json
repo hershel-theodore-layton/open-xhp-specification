@@ -7,8 +7,8 @@
   "require-dev": {
     "hhvm/hhvm-autoload": "^3.2",
     "hhvm/hacktest": "^2.3",
-    "facebook/fbexpect": "^2.8",
     "facebook/xhp-lib": "^4.0",
+    "hershel-theodore-layton/expect": "dev-master",
     "hershel-theodore-layton/sgml-stream-interfaces": "dev-master",
     "hershel-theodore-layton/sgml-stream": "dev-master"
   },

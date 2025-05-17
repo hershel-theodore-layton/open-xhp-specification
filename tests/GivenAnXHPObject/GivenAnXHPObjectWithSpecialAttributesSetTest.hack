@@ -2,7 +2,7 @@
 namespace HTL\OpenXHPSpecification;
 
 use type Facebook\HackTest\HackTest;
-use function Facebook\FBExpect\expect;
+use function HTL\Expect\{expect, expect_invoked};
 
 final class GivenAnXHPObjectWithSpecialAttributesSetTest extends HackTest {
   const type TypeUnderTest = tag\empty;
@@ -33,9 +33,9 @@ final class GivenAnXHPObjectWithSpecialAttributesSetTest extends HackTest {
   public function test_setting_a_non_arraykey_value_on_a_special_attribute_throws_on_sgml_stream(
   )[defaults]: void {
     static::skipIfXHPLib(null);
-    expect(() ==> <tag:empty data-special={1.1} />)->toThrow(
-      \HH\InvariantException::class,
-    );
+    expect_invoked(() ==> <tag:empty data-special={1.1} />)->toHaveThrown<
+      InvariantException,
+    >();
   }
 
   public async function test_renders_all_explicitly_set_attributes(

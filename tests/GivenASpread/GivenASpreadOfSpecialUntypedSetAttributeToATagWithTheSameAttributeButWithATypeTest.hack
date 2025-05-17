@@ -2,7 +2,7 @@
 namespace HTL\OpenXHPSpecification;
 
 use type Facebook\HackTest\HackTest;
-use function Facebook\FBExpect\expect;
+use function HTL\Expect\expect;
 
 final class GivenASpreadOfSpecialUntypedSetAttributeToATagWithTheSameAttributeButWithATypeTest
   extends HackTest {
@@ -39,6 +39,6 @@ final class GivenASpreadOfSpecialUntypedSetAttributeToATagWithTheSameAttributeBu
   private static function takesNullableString(
     <<__Soft>> ?string $string_or_null,
   )[defaults]: void {
-    expect($string_or_null)->toBeType('int');
+    expect($string_or_null)->toHaveType<int>();
   }
 }

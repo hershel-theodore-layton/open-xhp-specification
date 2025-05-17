@@ -2,7 +2,7 @@
 namespace HTL\OpenXHPSpecification;
 
 use type Facebook\HackTest\HackTest;
-use function Facebook\FBExpect\expect;
+use function HTL\Expect\expect;
 
 final class GivenAnXHPObjectWithDeclaredAttributesNotSetTest extends HackTest {
   const type TypeUnderTest = tag\herp_and_derp;

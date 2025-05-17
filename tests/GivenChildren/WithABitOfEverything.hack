@@ -2,7 +2,7 @@
 namespace HTL\OpenXHPSpecification;
 
 use type Facebook\HackTest\HackTest;
-use function Facebook\FBExpect\expect;
+use function HTL\Expect\expect;
 
 final class WithALittleBitOfEverything extends HackTest {
   public async function test_the_frags_and_arrays_are_unpacked_in_order(

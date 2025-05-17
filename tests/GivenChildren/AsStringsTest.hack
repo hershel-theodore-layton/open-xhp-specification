@@ -2,7 +2,7 @@
 namespace HTL\OpenXHPSpecification;
 
 use type Facebook\HackTest\HackTest;
-use function Facebook\FBExpect\expect;
+use function HTL\Expect\expect;
 
 final class AsStringsTest extends HackTest {
   public async function test_the_strings_are_not_yet_escaped(

@@ -7,19 +7,15 @@
   "require-dev": {
     "hhvm/hhvm-autoload": "^3.2",
     "hhvm/hacktest": "^2.3",
-    "facebook/fbexpect": "^2.8",
     "facebook/xhp-lib": "^4.0",
+    "hershel-theodore-layton/expect": "dev-master",
     "hershel-theodore-layton/sgml-stream-interfaces": "dev-master",
     "hershel-theodore-layton/sgml-stream": "dev-master",
     "hershel-theodore-layton/portable-hack-ast-linters-server": "<1"
   },
   "scripts": {
-    "post-install-cmd": [
-      "rm vendor/autoload.php vendor/composer/*.php"
-    ],
-    "post-update-cmd": [
-      "rm vendor/autoload.php vendor/composer/*.php"
-    ]
+    "post-install-cmd": ["rm vendor/autoload.php vendor/composer/*.php"],
+    "post-update-cmd": ["rm vendor/autoload.php vendor/composer/*.php"]
   },
   "config": {
     "allow-plugins": {

@@ -2,7 +2,7 @@
 namespace HTL\OpenXHPSpecification;
 
 use type Facebook\HackTest\HackTest;
-use function Facebook\FBExpect\expect;
+use function HTL\Expect\{expect, expect_invoked};
 
 final class GivenAnXHPObjectWithDeclaredRequiredAttributesNotSetTest
   extends HackTest {
@@ -20,9 +20,9 @@ final class GivenAnXHPObjectWithDeclaredRequiredAttributesNotSetTest
       'sgml-stream does not expect you to violate required',
     );
     $type_under_test = static::typeUnderTest();
-    expect(() ==> $type_under_test->:herp)->toThrow(
-      \Facebook\XHP\AttributeRequiredException::class,
-    );
+    expect_invoked(() ==> $type_under_test->:herp)->toHaveThrown<
+      \Facebook\XHP\AttributeRequiredException,
+    >();
   }
 
   public function test_access_yields_null_on_sgml_stream()[defaults]: void {

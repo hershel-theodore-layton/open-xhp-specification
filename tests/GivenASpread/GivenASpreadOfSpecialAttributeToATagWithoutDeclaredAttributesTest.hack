@@ -2,7 +2,7 @@
 namespace HTL\OpenXHPSpecification;
 
 use type Facebook\HackTest\HackTest;
-use function Facebook\FBExpect\expect;
+use function HTL\Expect\expect;
 
 final class GivenASpreadOfSpecialAttributeToATagWithoutDeclaredAttributesTest
   extends HackTest {
