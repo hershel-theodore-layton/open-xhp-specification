@@ -2,6 +2,14 @@
 
 An ad hoc specification of the behaviors of xhp-lib and sgml-stream
 
+## Archived
+
+This repository has been archived in June of 2025. This archival does not affect sgml-stream or xhp-lib.
+
+Xhp-lib was archived in early 2024. Sgml-stream is still receiving updates. The tests in this test suite still have value and have been ported to sgml-stream repository. Continued comparision with xhp-lib is useless, since xhp-lib will not receive updates anymore.
+
+---
+
 _Important to note. This "specification" is not prescriptive. It describes xhp-lib and sgml-stream as they behave right now. If their behavior changes, which causes a test to fail, this may not be the library at fault._
 
 For the list of behaviors which differ between the two libraries, see [behavior differences](./behavior_differences.md). The differences are written in a `Given ... Then` format. When the situation as described in `Given` occurs, `Then x will happen`. Most behaviors between the libraries are identical. Some differ because of implementation details. Others differ because of a different choice made by the library developers. Do not take these descriptions as guarantees of their behavior in the future. That would be the definition of [Hyrum's Law](https://www.hyrumslaw.com/). We do not want to restrict the developers from changing their implementations in the future.
